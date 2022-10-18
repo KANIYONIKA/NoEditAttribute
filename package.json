@@ -1,0 +1,12 @@
+{
+  "author": "KANIYO KANIYONIKA",
+  "dependencies": {    },
+  "description": "You can use [ReadOnly] attribute to the property in your code.",
+  "displayName": "ReadOnlyAttribute",
+  "keywords": [ "unity", "unity3d", "unity-editor" ],
+  "license": "MIT",
+  "name": "com.kaniyonika.read-only-attribute",
+  "repository": "github:KANIYONIKA/Singleton",
+  "unity": "2020.3",
+  "version": "1.0.0"
+}
