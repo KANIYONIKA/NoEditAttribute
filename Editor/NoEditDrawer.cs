@@ -7,11 +7,15 @@ using UnityEditor;
 [CustomPropertyDrawer(typeof(NoEditAttribute))]
 public class NoEditDrawer : PropertyDrawer
 {
-  public override void OnGUI(Rect _position, SerializedProperty _property, GUIContent _label)
-  {
-    EditorGUI.BeginDisabledGroup(true);
-    EditorGUI.PropertyField(_position, _property, _label);
-    EditorGUI.EndDisabledGroup();
-  }
+    private NoEditAttribute NoEditAttribute => (NoEditAttribute)attribute;
+
+    public override void OnGUI(Rect _position, SerializedProperty _property, GUIContent _label)
+    {
+        var newPos = _position;
+        newPos.x = _position.x + (NoEditAttribute.indent * 7.25f);
+        EditorGUI.BeginDisabledGroup(true);
+        EditorGUI.PropertyField(newPos, _property, _label);
+        EditorGUI.EndDisabledGroup();
+    }
 }
 #endif
