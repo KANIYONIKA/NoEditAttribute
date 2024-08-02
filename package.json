@@ -1,12 +1,12 @@
 {
   "author": "KANIYO KANIYONIKA",
   "dependencies": {    },
-  "description": "You can use [ReadOnly] attribute to the property in your code.",
-  "displayName": "ReadOnlyAttribute",
+  "description": "You can use [NoEdit] attribute to the property in your code.",
+  "displayName": "NoEditAttribute",
   "keywords": [ "unity", "unity3d", "unity-editor" ],
   "license": "MIT",
-  "name": "com.kaniyonika.read-only-attribute",
-  "repository": "github:KANIYONIKA/Singleton",
+  "name": "com.kaniyonika.no-edit-attribute",
+  "repository": "github:KANIYONIKA/NoEditAttribute",
   "unity": "2020.3",
   "version": "1.0.0"
 }

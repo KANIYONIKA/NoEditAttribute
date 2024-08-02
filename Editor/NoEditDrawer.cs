@@ -4,8 +4,8 @@ using UnityEditor;
 #endif
 
 #if UNITY_EDITOR
-[CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
-public class ReadOnlyDrawer : PropertyDrawer
+[CustomPropertyDrawer(typeof(NoEditAttribute))]
+public class NoEditDrawer : PropertyDrawer
 {
   public override void OnGUI(Rect _position, SerializedProperty _property, GUIContent _label)
   {
